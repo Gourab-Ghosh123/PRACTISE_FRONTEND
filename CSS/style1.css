@@ -1,0 +1,31 @@
+* {
+    background-color: rebeccapurple;
+}
+
+.box {
+    color: beige;
+}
+
+#greeting {
+    color: brown;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+.heading {
+    color: chartreuse;
+}
+
+#title {
+    color: darksalmon;
+}
+
+html{
+    font-size: 100px;
+}
+
+.para {
+    font-size: 3rem;
+}
