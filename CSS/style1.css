@@ -23,9 +23,27 @@ h2 {
 }
 
 html{
-    font-size: 100px;
+    font-size: 10px;
 }
 
 .para {
     font-size: 3rem;
+}
+
+.box2 {
+    background-color: rgb(139, 139, 211);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.box3 {
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: solid red 3px;
+    margin: 3px;
 }
