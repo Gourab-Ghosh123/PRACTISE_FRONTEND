@@ -1,0 +1,52 @@
+/* position : sticky */
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: tomato;
+}
+
+.content {
+    height: 1000px;
+    background-color:indigo;
+}
+
+
+/* position : absolute*/
+
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: darkslategray;
+}
+
+.child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100pxb;
+    width: 100px;
+    background-color: floralwhite;
+}
+
+
+/* grid... */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+}
+
+.container div {
+    background-color: indianred;
+    padding: 20px;
+    border: 2px solid rgb(42, 35, 88);
+}
+
+.item5 {
+    grid-column: 1/3;
+}
