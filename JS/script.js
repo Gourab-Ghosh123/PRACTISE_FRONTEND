@@ -95,3 +95,69 @@ if(call == 'division'){
 let result = division(2,3);
 console.log(result);
 }
+
+
+// DOM(Document Object Model) -- Browser converts HTML into objects that JS can access and modify---
+
+let heading = document.getElementById("title");
+console.log(heading);
+
+let subheading = document.querySelectorAll("#title1");
+
+
+subheading.innerText = "WElcome";
+console.log(subheading);
+
+
+let sub = document.querySelector("#title");
+sub.innerText = "Welcome";
+console.log(sub);
+
+let para = document.querySelector("p");
+para.style.color = "red";
+
+
+
+// EVENT-- something happening on webpage-
+//onclick stores one function , while addEventListener() can attach multiple functions to the same event without replacing previous ones .
+
+let btn = document.querySelector("#btn");
+btn.onclick = function(){
+    alert("Button Clciked");
+}
+
+let btn1 = document.querySelector("#btn1");
+btn.addEventListener("click" , () => {
+    alert("clicked!");
+});
+
+btn1.addEventListener("click" , () =>{
+    console.log("Submit Form");
+});
+
+btn1.addEventListener("click" , () =>{
+    console.log("Send API");
+});
+
+// INPUT EVENTS
+
+let input = document.querySelector("#text");
+input.addEventListener("input" , () =>{
+    console.log(input.value);
+});
+
+// CLASS MANIPULATION
+
+let box = document.querySelector("#box");
+box.classList.add("active");
+box.classList.remove("active");
+box.classList.toggle("active");
+
+
+
+// CREATE ELEMENTS
+let p = document.createElement("p");
+p.innerText = "Hello";
+
+document.body.appendChild(p);
+p.remove();
