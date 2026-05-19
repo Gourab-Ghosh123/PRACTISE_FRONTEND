@@ -89,3 +89,23 @@ let name = username.find((student) =>{
 });
 
 console.log(name);
+
+//Async Function...
+console.log("start");
+setTimeout(() => {console.log("Hii")} , 3000);
+console.log("end");
+
+
+
+
+// Mini-Project for Async/Await....
+
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click" , async() =>{
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    let data = await response.json();
+
+    console.log(data);
+})
