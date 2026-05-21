@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background: #e6b3b390;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+.container {
+    width: 400px;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+}
+
+button {
+    padding : 10px;
+    background : black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.noteContainer {
+    margin-top: 10px;
+
+    display: flex;
+    flex: column;
+    gap: 10px;
+}
