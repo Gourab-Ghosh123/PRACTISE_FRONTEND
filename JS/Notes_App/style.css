@@ -40,10 +40,19 @@ button {
     cursor: pointer;
 }
 
-.noteContainer {
+#notesContainer {
     margin-top: 10px;
 
     display: flex;
-    flex: column;
+    flex-direction : column;
     gap: 10px;
 }
+
+.noteDiv {
+    display: flex;
+}
+
+.childnote {
+    background : white;
+}
+
