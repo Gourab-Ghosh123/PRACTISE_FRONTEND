@@ -1,30 +1,34 @@
-import ProductCard from "./Components/Productcard";
-
-const products = [
-  {
-    id : 1,
-    name : "iPhone",
-    pirce : "$999"
-  },
-  {
-    id : 2,
-    name : "Laptop",
-    price : "$1200"
-  }
-]
+import  { useState } from "react";
 
 function App() {
+
+  const [email , setEmail] = useState("");
+  const [password , setPassword] = useState("");
+
+  function handleSubmit(e) {
+    e.PreventDefault();
+    alert("Form Submitted")
+  }
+
   return (
-    <>
-      {products.map((product) => (
-          <ProductCard 
-            key={product.id}
-            name={product.name}
-            price={product.price}
-          />
-      ))}
-    </>
-  );
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="email" placeholder="Enter email..."
+        onChange = {(e) => setEmail(e.target.value)} />
+
+        <br /><br />
+        <br /><br />
+
+        <input type="Password" placeholder="Enter Password"
+        onChange={(e) => setPassword(e.target.value)}/>
+
+        <br /><br />
+        <br /><br />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  )
 }
 
 export default App;
